@@ -1,0 +1,169 @@
+* {
+ padding: 0;
+ margin: 0;
+}
+
+body {
+ background-color: #fcba03;
+}
+
+#background{
+ width: 90vw;
+ height: 90vw;
+ position: absolute;
+ z-index: 1;
+}
+
+header,
+footer {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+header {
+ font-size: 4vw;
+}
+
+footer {
+ position: absolute;
+ font-size: 4vw;
+ bottom: 10px;
+ left: 50%;
+ transform: translateX(-50%);
+}
+
+section {
+ margin-top: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.container {
+ box-shadow: 0px 0px 5px black;
+ width: 90vw;
+ margin: 20px auto;
+}
+
+section ul {
+ height: 90vw;
+ width: 90vw;
+}
+
+#absolute1,
+#absolute2 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 9vw;
+ height: 9vw;
+ font-size: 7vw;
+ grid-gap: 10px;
+ position: absolute;
+ z-index: 2;
+}
+
+.buttons {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ font-size: 30px;
+ margin-top: 70px;
+ grid-gap: 10px;
+}
+
+
+.walkstraight {
+ transition: ease-in-out margin 700ms;
+}
+
+
+.top {
+ margin-top: 81vw;
+}
+
+.bottom1 {
+ margin-top: 72vw;
+ margin-bottom: 9vw;
+}
+
+.bottom2 {
+ margin-top: 63vw;
+ margin-bottom: 18vw;
+}
+
+.bottom3 {
+ margin-top: 54vw;
+ margin-bottom: 27vw;
+}
+
+.bottom4 {
+ margin-top: 45vw;
+ margin-bottom: 36vw;
+}
+
+.bottom5 {
+ margin-top: 36vw;
+ margin-bottom: 45vw;
+}
+
+.bottom6 {
+ margin-top: 27vw;
+ margin-bottom: 54vw;
+}
+
+.bottom7 {
+ margin-top: 18vw;
+ margin-bottom: 63vw;
+}
+
+.bottom8 {
+ margin-top: 9vw;
+ margin-bottom: 72vw;
+}
+
+.bottom9 {
+ margin-top: 0vw;
+ margin-bottom: 81vw;
+}
+
+#players {
+ display: grid;
+ grid-template-columns: auto auto;
+ justify-content: center;
+ align-items: center;
+}
+
+.player {
+ width: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin: 0vw 50px;
+ margin-top: 10px;
+}
+
+#player1value,
+#player2value {
+ margin: 10px 0px;
+}
+
+#start1,
+#start2 {
+ margin-bottom: 10px;
+ font-size: 40px;
+ height: auto;
+ border: 1px solid black;
+ height: 40px;
+ width: 40px;
+ padding: auto auto;
+}
+
+#player1text,
+#player2text {
+ margin-top: 10px;
+}
