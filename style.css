@@ -7,7 +7,7 @@ body {
  background-color: #fcba03;
 }
 
-#background{
+#background {
  width: 90vw;
  height: 90vw;
  position: absolute;
@@ -83,6 +83,7 @@ section ul {
 
 .top {
  margin-top: 81vw;
+
 }
 
 .bottom1 {
