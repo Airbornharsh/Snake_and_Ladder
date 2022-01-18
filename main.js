@@ -16,6 +16,8 @@ class Snake {
   this.absolute.classList.add('top');
   start.addEventListener('click', () => {
    let rand = Math.floor(Math.random() * 6 + 1);
+   rand = rand;
+   App.render
    App.render(this.inputbt);
    App.id();
    document.getElementById(this.playervalueid).textContent = rand;
@@ -58,13 +60,16 @@ class Snake {
    if (this.id == 100) {
     alert(`${this.playerid} Won`)
     this.id = 1;
-    this.absolute.style.margin = '81vw 81vw 0vw 0vw';
     App.reset();
    }
    this.sixcheck(value, 1, start);
    this.id -= value;
    previous = this.id;
   }
+ }
+
+ idresetfor() {
+  this.id = 1;
  }
 
  sixcheck(value, time, start) {
@@ -163,7 +168,7 @@ class Snake {
    this.trick(4, 2, 53);
   } else
   if (value == 99) {
-   this.trick(4, 7, 41);
+   this.trick(5, 9, 41);
   }
  }
 
@@ -205,13 +210,13 @@ class App {
   this.player2snake = new Snake('player2', 'absolute2', 'start2', 'player2value');
   this.start1 = document.getElementById('start1');
   this.start2 = document.getElementById('start2');
+  this.absolute1 = document.getElementById('absolute1');
+  this.absolute2 = document.getElementById('absolute2');
  }
 
  static id() {
   this.playerid1 = this.player1snake.removestraight();
   this.playerid2 = this.player2snake.removestraight();
-  console.log(this.playerid1);
-  console.log(this.playerid2);
   if (this.playerid1 == this.playerid2) {
    console.log('hii');
   }
@@ -230,6 +235,17 @@ class App {
   document.getElementById('player2value').textContent = 0;
   this.start1.style.display = 'block';
   this.start2.style.display = 'block';
+  this.absolute1.style.margin = '81vw 81vw 0vw 0vw';
+  this.absolute2.style.margin = '81vw 81vw 0vw 0vw';
+  this.idreset();
+  setTimeout(()=>{
+   document.getElementById('forresetpurpose').click();
+  },3000);
+ }
+
+ static idreset() {
+  this.player1snake.idresetfor();
+  this.player2snake.idresetfor();
  }
 
  static render(btid) {
