@@ -4,7 +4,6 @@
 }
 
 body {
- /*background-color: #fcba03;*/
  background: linear-gradient(90deg, rgba(0, 24, 77, 1) 0%, rgba(0, 53, 63, 1) 50%, rgba(0, 69, 65, 1) 100%);
 color: cyan;
 }
